@@ -1,0 +1,36 @@
+.icons{
+    margin-top: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+}
+
+img{
+    width: 15rem;
+}
+
+.projects > img{    
+    transition: transform .2s;
+}
+
+.projects > img:hover{
+    transform: scale(1.5);
+}
+
+.projects{
+    width: 100%;
+}
+
+main{
+    margin: auto;
+    max-width: 70%;   
+}
+
+p{
+    font-family: sans-serif;
+}
+
+
+
+/*modals*/
+

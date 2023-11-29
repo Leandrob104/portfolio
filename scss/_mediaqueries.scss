@@ -1,0 +1,52 @@
+@media screen and (max-width: 800px) {
+    .icons{
+        display: none;
+    }
+
+    .title_wrapper h1{
+        font-size: 2rem;
+    }
+
+    .fase_1{
+        font-size: 1rem;
+    }
+
+    .fase_2 {
+        font-size: 1.5rem;
+    }
+
+    .about_me{
+        padding-top: 40rem;
+    }
+
+    .container_solid .title_wrapper h1{
+        background-image: url(/img/mobile_background.webp);
+    }
+
+    .container_image{
+        background-image:url(/img/mobile_background.webp);
+    }
+
+    .bg{
+        background-image: linear-gradient(-60deg, #ffffff 50%, #cbfebb 50%);
+        animation: slide 25s ease-in-out infinite alternate;
+    }
+
+    .projects{
+        padding-left: 25%;
+    }
+
+    .footer{
+        text-align:left;
+        padding:5%;
+        background:#cbfebb;
+        }
+        .footer .row ul li{
+        display:block;
+        margin:10px 0px;
+        text-align:left;
+        }
+        .footer .row a i{
+        margin:0% 3%;
+        }
+}   

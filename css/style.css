@@ -1,0 +1,243 @@
+.bg {
+  animation: slide 25s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #ffffff 50%, rgb(255, 201, 201) 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 35s;
+}
+
+.bg3 {
+  animation-duration: 30s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+.container {
+  clip: rect(0, auto, auto, 0);
+  overflow: hidden;
+  position: absolute;
+  height: 100vh;
+  left: 0;
+  width: 100%;
+  -webkit-mask-image: -webkit-linear-gradient(top, #ffffff 0%, #ffffff 100%);
+}
+
+.container_solid {
+  background: white;
+  top: 0;
+}
+
+.title_wrapper {
+  position: fixed;
+  display: block;
+  margin: auto;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.title_wrapper h1 {
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+
+.container_solid .title_wrapper h1 {
+  background: url(/img/background_image.webp);
+  background-size: 100vw auto;
+  background-position: center;
+  -text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: black;
+}
+
+.container_image {
+  background-image: url(/img/background_image.webp);
+  background-size: 100vw auto;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  top: 100vh;
+}
+
+.container_image .title_wrapper h1 {
+  color: white;
+}
+
+section {
+  padding: 2em;
+  margin: auto;
+  max-width: 70%;
+}
+
+.background {
+  min-height: 100vh;
+  padding: 2em;
+  margin: auto;
+}
+
+section p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: sans-serif;
+}
+
+.fase_1 {
+  color: rgb(132, 132, 132);
+  padding-top: 0.9rem;
+}
+
+.fase_2 {
+  color: white;
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-family: sans-serif;
+  font-size: 3rem;
+}
+
+.icons {
+  margin-top: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+}
+
+img {
+  width: 15rem;
+}
+
+.projects > img {
+  transition: transform 0.2s;
+}
+
+.projects > img:hover {
+  transform: scale(1.5);
+}
+
+.projects {
+  width: 100%;
+}
+
+main {
+  margin: auto;
+  max-width: 70%;
+}
+
+p {
+  font-family: sans-serif;
+}
+
+/*modals*/
+@media screen and (max-width: 800px) {
+  .icons {
+    display: none;
+  }
+  .title_wrapper h1 {
+    font-size: 2rem;
+  }
+  .fase_1 {
+    font-size: 1rem;
+  }
+  .fase_2 {
+    font-size: 1.5rem;
+  }
+  .about_me {
+    padding-top: 40rem;
+  }
+  .container_solid .title_wrapper h1 {
+    background-image: url(/img/mobile_background.webp);
+  }
+  .container_image {
+    background-image: url(/img/mobile_background.webp);
+  }
+  .bg {
+    background-image: linear-gradient(-60deg, #ffffff 50%, #cbfebb 50%);
+    animation: slide 25s ease-in-out infinite alternate;
+  }
+  .projects {
+    padding-left: 25%;
+  }
+  .footer {
+    text-align: left;
+    padding: 5%;
+    background: #cbfebb;
+  }
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
+  }
+}
+.footer {
+  background: rgb(241, 211, 211);
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+  border-radius: 2rem;
+  border: 0.2rem solid black;
+}
+
+.footer .row {
+  width: 97%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: gray;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #fff;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  list-style-type: none;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+/*# sourceMappingURL=style.css.map */
